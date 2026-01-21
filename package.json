@@ -1,0 +1,43 @@
+{
+  "name": "electron-nuxt",
+  "version": "1.0.0",
+  "description": "Electron + Nuxt 4.x application",
+  "main": ".out/main/index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-forge start",
+    "build": "electron-forge package",
+    "make": "electron-forge make",
+    "lint": "eslint . --ext .ts,.vue",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.0",
+    "@electron-forge/maker-deb": "^7.6.0",
+    "@electron-forge/maker-rpm": "^7.6.0",
+    "@electron-forge/maker-squirrel": "^7.6.0",
+    "@electron-forge/maker-zip": "^7.6.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
+    "@electron-forge/plugin-fuses": "^7.6.0",
+    "@electron/fuses": "^1.8.0",
+    "@nuxt/eslint": "^0.7.5",
+    "@types/node": "^22.10.5",
+    "electron": "^34.0.0",
+    "eslint": "^9.18.0",
+    "nuxt": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "config": {
+    "forge": "./forge.config.ts"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+node_modules
+dist
+.out
+.nuxt
+.cache
+.DS_Store
+*.log
+*.tgz
+*.zip
+.vscode
+.idea
+coverage
+*.swp
+*.swo
+*~
